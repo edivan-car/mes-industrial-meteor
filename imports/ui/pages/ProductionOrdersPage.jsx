@@ -6,7 +6,7 @@ import {ProductionOrders} from '/imports/api/productionOrders/collection';
 
 export const ProductionOrdersPage = () => {
     const [selectedMachine, setSelectedMachine] = useState('');
-    const [ProductName, setProductName] = useState('');
+    const [productName, setProductName] = useState('');
     const [quantity, setQuantity] = useState('');
 
     // Subscription and real-time data retrieval
@@ -44,7 +44,7 @@ export const ProductionOrdersPage = () => {
         <div className="p-6 bg-gray-100 min-h-screen font-sans">
             <h1 className="text-3xl font-bold mb-8 text-gray-800">Ordens de Produção (OP)</h1>
 
-            {/* Formulário com estilo industrial e botões grandes [3, 5] */}
+            {/* Industrial-style form with large buttons. */}
             <section className="bg-white p-6 rounded-lg shadow-md mb-10">
                 <h2 className="text-xl font-semibold mb-4">Nova Ordem de Produção</h2>
                 <form onSubmit={handleCreateOrder} className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -84,7 +84,7 @@ export const ProductionOrdersPage = () => {
                 </form>
             </section>
 
-            {/* Listagem de OPs em tempo real [5] */}
+            {/* Real-time listing of work orders. */}
             <section className="bg-white rounded-lg shadow-md overflow-hidden">
                 <table className="w-full text-left">
                     <thead className="bg-gray-200 text-gray-700 uppercase text-sm">

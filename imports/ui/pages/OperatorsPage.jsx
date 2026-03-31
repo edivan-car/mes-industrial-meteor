@@ -7,7 +7,7 @@ export const OperatorsPage = () => {
     const [name, setName] = useState('');
     const [shift, setShift] = useState('A');
 
-    // Busca operadores em tempo real
+    // Search for operators in real time.
     const { operators, isLoading } = useTracker(() => {
         const handler = Meteor.subscribe('operators.all');
         return {
@@ -43,7 +43,7 @@ export const OperatorsPage = () => {
                 <p className="text-gray-600">Gerencie a equipe e os turnos de trabalho</p>
             </header>
 
-            {/* Formulário de Cadastro - Estilo Tablet */}
+            {/* Registration Form - Tablet Style */}
             <section className="bg-white p-8 rounded-xl shadow-lg mb-10 max-w-4xl">
                 <form onSubmit={handleSubmit} className="flex flex-col md:flex-row gap-6 items-end">
                     <div className="flex-1 w-full">
@@ -80,7 +80,7 @@ export const OperatorsPage = () => {
                 </form>
             </section>
 
-            {/* Tabela de Operadores */}
+            {/* Operator Table */}
             <section className="bg-white rounded-xl shadow-lg overflow-hidden max-w-4xl">
                 <table className="w-full text-left border-collapse">
                     <thead>
