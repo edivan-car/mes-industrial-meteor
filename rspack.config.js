@@ -22,7 +22,7 @@ module.exports = defineConfig((Meteor) => {
         },
         {
           test: /\.css$/i,
-          use: ["style-loader", "css-loader", "postcss-loader"],
+          use: ["postcss-loader"],
         },
       ],
     },
