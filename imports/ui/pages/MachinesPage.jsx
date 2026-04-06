@@ -28,9 +28,13 @@ export const MachinesPage = () => {
         });
     };
 
-    const updateStatus = (id, status) => {
-        // Atualiza o status conforme as regras de negócio: RUNNING, STOPPED ou FAILURE [5]
-        Meteor.call('machines.updateStatus', id, status);
+    const updateStatus = async (id, status) => {
+        try {
+            // Update the status according to the business rules: RUNNING, STOPPED or FAILURE
+            await Meteor.callAsync('machines.updateStatus', id, status);
+        } catch (err){
+            alert("Erro ao atualizar: " + err.reason);
+        }
     };
 
     return (

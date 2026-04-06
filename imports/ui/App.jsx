@@ -17,7 +17,7 @@ export const App = () => {
                 return <MachinesPage/>;
             case 'operators':
                 return <OperatorsPage/>;
-            case 'orders':
+            case 'production':
                 return <ProductionOrdersPage/>;
             default:
                 return <MachinesPage/>;
@@ -39,9 +39,9 @@ export const App = () => {
                     onClick={() => setCurrentPage('operators')}
                 />
                 <NavButton
-                    label="ORDENS (OP)"
-                    isActive={currentPage === 'orders'}
-                    onClick={() => setCurrentPage('orders')}
+                    label="PRODUÇÃO"
+                    isActive={currentPage === 'production'}
+                    onClick={() => setCurrentPage('production')}
                 />
             </nav>
 
