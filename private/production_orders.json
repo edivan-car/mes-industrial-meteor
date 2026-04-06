@@ -1,0 +1,26 @@
+[
+  {
+    "opCode": "55555 26 001",
+    "productCode": "MP-1020",
+    "description": "CHAPA DE ACO GALVANIZADA 2MM",
+    "quantity": 1500,
+    "dueDate": "2026-04-10",
+    "status": "RELEASED"
+  },
+  {
+    "opCode": "55555 26 002",
+    "productCode": "MP-2040",
+    "description": "PERFIL ESTRUTURAL U 3 POL",
+    "quantity": 450,
+    "dueDate": "2026-04-12",
+    "status": "RELEASED"
+  },
+  {
+    "opCode": "55555 26 003",
+    "productCode": "MP-5010",
+    "description": "TUBO INDUSTRIAL QUADRADO 40X40",
+    "quantity": 800,
+    "dueDate": "2026-04-15",
+    "status": "RELEASED"
+  }
+]
