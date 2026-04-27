@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useTracker } from 'meteor/react-meteor-data';
 import { Meteor } from 'meteor/meteor';
-import { Operators } from '../../api/operators/collection';
+import { Operators } from '../../api/operators/operatorsCollection';
 
 export const OperatorsPage = () => {
     const [name, setName] = useState('');

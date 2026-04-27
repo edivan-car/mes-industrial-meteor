@@ -1,5 +1,5 @@
 import { meteor } from 'meteor/meteor';
-import { Machines } from './collection';
+import { Machines } from './machinesCollection';
 
 Meteor.publish('machines.all', function () {
     return Machines.find();

@@ -1,5 +1,5 @@
 import {Meteor} from 'meteor/meteor';
-import {ProductionOrders} from './collection';
+import {ProductionOrders} from './productionOrdersCollection';
 
 // Publish all work orders for monitoring.
 Meteor.publish('productionOrders.all', function () {

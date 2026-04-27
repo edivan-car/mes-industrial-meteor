@@ -1,5 +1,5 @@
 import {Meteor} from 'meteor/meteor';
-import {ProductionOrders} from './collection';
+import {ProductionOrders} from './productionOrdersCollection';
 
 Meteor.methods({
     'productionOrders.insert'(data) {

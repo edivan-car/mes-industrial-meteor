@@ -1,15 +1,15 @@
 import { Meteor } from 'meteor/meteor';
-import {ProductionOrders} from "../imports/api/productionOrders/collection";
+import {ProductionOrders} from "../imports/api/productionOrders/productionOrdersCollection";
 
-import '../imports/api/machines/collection';
-import '../imports/api/machines/methods';
-import '../imports/api/machines/publications';
-import '../imports/api/productionOrders/collection';
-import '../imports/api/productionOrders/methods';
-import '../imports/api/productionOrders/publications';
-import '../imports/api/operators/collection';
-import '../imports/api/operators/methods';
-import '../imports/api/operators/publications';
+import '../imports/api/machines/machinesCollection';
+import '../imports/api/machines/machinesMethods';
+import '../imports/api/machines/machinesPublications';
+import '../imports/api/productionOrders/productionOrdersCollection';
+import '../imports/api/productionOrders/productionOrdersMethods';
+import '../imports/api/productionOrders/productionOrdersPublications';
+import '../imports/api/operators/operatorsCollection';
+import '../imports/api/operators/operatorsMethods';
+import '../imports/api/operators/operatorsPublications';
 
 Meteor.startup(async () => {
     // 1. We check if there are already OPs in the database.

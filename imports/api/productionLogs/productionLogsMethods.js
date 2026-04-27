@@ -1,6 +1,6 @@
 import { Meteor } from 'meteor/meteor';
 import { check } from 'meteor/check';
-import { ProductionLogs } from './collection';
+import { ProductionLogs } from './productionLogsCollection';
 
 Meteor.methods({
     async 'productionLogs.insert'({ machineId, operatorId, opId, status, reason }) {

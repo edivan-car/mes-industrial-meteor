@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useTracker } from 'meteor/react-meteor-data';
-import { ProductionOrders } from '../../api/productionOrders/collection';
+import { ProductionOrders } from '../../api/productionOrders/productionOrdersCollection';
 
 export const ProductionOrdersPage = ({ onSelectOP }) => {
     const [searchTerm, setSearchTerm] = useState('');

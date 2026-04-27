@@ -1,5 +1,5 @@
 import { Meteor } from 'meteor/meteor';
-import { Machines } from './collection';
+import { Machines } from './machinesCollection';
 
 Meteor.methods({
     'machines.insert'(data) {

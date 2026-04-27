@@ -1,5 +1,5 @@
 import { Meteor } from 'meteor/meteor';
-import { Operators } from './collection';
+import { Operators } from './operatorsCollection';
 
 Meteor.methods({
     'operators.insert'(data) {

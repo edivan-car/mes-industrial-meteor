@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useTracker } from 'meteor/react-meteor-data';
 import { Meteor } from 'meteor/meteor';
-import { Machines } from '../../api/machines/collection';
+import { Machines } from '../../api/machines/machinesCollection';
 
 export const MachinesPage = () => {
     const [machineName, setMachineName] = useState('');
