@@ -18,7 +18,7 @@ Este projeto aplica conceitos de **Indústria 4.0** através de decisões técni
 * **Arquitetura Moderna:** Uso do **Meteor 3.x** para garantir operações assíncronas robustas e comunicação em tempo real via WebSockets (Pub/Sub).
 * **Massa de Dados Estruturada:** Utilização de arquivos JSON para simular a integração com sistemas de planejamento (PPCP/ERP).
 
-## ✅ Status do Projeto: ase de Estruturação e Setup (Em desenvolvimento)
+## ✅ Status do Projeto: Fase de Estruturação e Setup (Em desenvolvimento)
 - [x] Configuração de Ambiente: Ambiente Fullstack configurado com Meteor, React e Tailwind CSS.
 - [x] Mecanismo de Auto-Seed (Setup): Estrutura inicial para leitura de arquivos JSON em /private preparada para popular o banco de dados.
 - [ ] Persistência Reativa: Implementação das Collections (Machines, Operators, Orders) e Methods com regras de negócio.
@@ -26,7 +26,7 @@ Este projeto aplica conceitos de **Indústria 4.0** através de decisões técni
 - [ ] Busca de OP em Tempo Real: Filtragem dinâmica e conexão do frontend com o backend.
 - [ ] Gestão de Ativos: Finalização do módulo de operadores e máquinas com rastreabilidade completa.
 
-📂 Massa de Dados (Seed Data)
+## 📂 Massa de Dados (Seed Data)
 Para garantir uma demonstração imediata e facilitar os testes de desenvolvimento, o sistema está sendo configurado para sincronizar automaticamente via server/main.js:
 - **Máquinas:** Cadastro via machines-mock.json para definir postos de trabalho e IDs fixos de teste.
 - **Operadores:** Base de dados inicial simulada para validação de turnos e identificação.
