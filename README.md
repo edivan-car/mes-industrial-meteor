@@ -20,17 +20,25 @@ Este projeto aplica conceitos de **Indústria 4.0** através de decisões técni
 
 ## ✅ Status do Projeto: Fase de Estruturação e Setup (Em desenvolvimento)
 - [x] Configuração de Ambiente: Ambiente Fullstack configurado com Meteor, React e Tailwind CSS.
-- [x] Mecanismo de Auto-Seed (Setup): Estrutura inicial para leitura de arquivos JSON em /private preparada para popular o banco de dados.
-- [ ] Persistência Reativa: Implementação das Collections (Machines, Operators, Orders) e Methods com regras de negócio.
-- [ ] Cockpit de Produção: Interface de operação com lógica de status (Running/Stopped) e registro de motivos de parada (Em fase de design).
-- [ ] Busca de OP em Tempo Real: Filtragem dinâmica e conexão do frontend com o backend.
-- [ ] Gestão de Ativos: Finalização do módulo de operadores e máquinas com rastreabilidade completa.
+- [x] Estrutura Inicial do Projeto: Organização modular inicial do frontend com separação entre pages, components e layouts.
+- [x] Assets do Sistema: Estrutura pública inicial criada para imagens, ícones e identidade visual do sistema.
+- [x] Loading Screen Industrial: Implementação da tela inicial de carregamento com animação, identidade visual MES e controle de fluxo inicial da aplicação.
+- [x] Controle Inicial de Fluxo: Reorganização do App.jsx para gerenciamento da inicialização e futuras transições de tela.
+
+### 🔄 Interfaces em desenvolvimento
+- [ ] MainPage
+- [ ] LoginPage
+- [ ] MachinePage
+- [ ] ProductionPage
+- [ ] Header industrial reutilizável
+- [ ] Componentes de botões operacionais
 
 ## 📂 Massa de Dados (Seed Data)
-Para garantir uma demonstração imediata e facilitar os testes de desenvolvimento, o sistema está sendo configurado para sincronizar automaticamente via server/main.js:
-- **Máquinas:** Cadastro via machines-mock.json para definir postos de trabalho e IDs fixos de teste.
-- **Operadores:** Base de dados inicial simulada para validação de turnos e identificação.
-- **Ordens de Produção (OPs):** Exemplos estruturados para testar o fluxo de carregamento e busca no terminal.
+Para garantir uma demonstração imediata e facilitar os testes de desenvolvimento, o sistema será configurado futuramente para sincronizar automaticamente os dados iniciais via server/main.js:
+
+- **Máquinas:** Cadastro via machines-mock.json para definição de postos de trabalho e IDs fixos de teste.
+- **Operadores:** Base de dados simulada para validação de identificação, turnos e autenticação operacional.
+- **Ordens de Produção (OPs):** Exemplos estruturados para testes do fluxo de carregamento, busca e apontamento produtivo.
 
 ## ⚙️ Como Executar o Projeto
 **Pré-requisitos:** Meteor.js 3.x e Node.js instalados.
