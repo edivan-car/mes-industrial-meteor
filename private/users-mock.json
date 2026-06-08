@@ -1,0 +1,17 @@
+[
+  {
+    "registration": "12345",
+    "name": "João da Silva",
+    "cc": "1001"
+  },
+  {
+    "registration": "67890",
+    "name": "Maria Oliveira",
+    "cc": "1002"
+  },
+  {
+    "registration": "11111",
+    "name": "Carlos Souza",
+    "cc": "1003"
+  }
+]
