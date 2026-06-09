@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import {useSubscribe, useFind} from "meteor/react-meteor-data";
 import {OperatorsCollection} from "../../api/operators/OperatorsCollection";
 
-export const LoginPage = () => {
+export const LoginPage = ({ onLogin }) => {
     const [registration, setRegistration] = useState("");
     //const [searchResult, setSearchResult] = useState([]);
     const [selectedOperator, setSelectedOperator] = useState(null);
@@ -102,7 +102,9 @@ export const LoginPage = () => {
 
                     {/* Botão de login */}
                     <button
-                        className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg transition">
+                        onClick={() => onLogin()}
+                        disabled={selectedOperator === null}
+                        className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg transition disabled:bg-slate-300 disabled:cursor-not-allowed">
                         Entrar
                     </button>
 
