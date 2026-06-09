@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import {useSubscribe, useFind} from "meteor/react-meteor-data";
 import {OperatorsCollection} from "../../api/operators/OperatorsCollection";
+import {Header} from "../components/Header";
+import {MainLayout} from "../layouts/MainLayout";
 
 export const LoginPage = ({ onLogin }) => {
     const [registration, setRegistration] = useState("");
@@ -21,21 +23,10 @@ export const LoginPage = ({ onLogin }) => {
     }, [registration]);
 
     return (
-        <div className="flex flex-col min-h-screen bg-slate-100">
+        <MainLayout>
 
             {/* CABEÇALHO */}
-            <header className="bg-slate-800 text-white px-6 py-3 flex items-center justify-between">
-                <div>
-                    <p className="text-sm font-semibold">Nome da Empresa</p>
-                    <p className="text-xs text-slate-400">Filial: 18 - Cidade</p>
-                </div>
-                <div>
-                    {/* Ícone de engrenagem */}
-                    <button className="text-slate-400 hover:text-white transition">
-                        ⚙️
-                    </button>
-                </div>
-            </header>
+            <Header />
 
             {/* CORPO */}
             <main className="flex flex-1 flex-col items-center justify-center gap-2 p-6">
@@ -110,6 +101,6 @@ export const LoginPage = ({ onLogin }) => {
 
                 </div>
             </main>
-        </div>
+        </MainLayout>
     )
 }
